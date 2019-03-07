@@ -14,7 +14,7 @@ article,aside,footer,header,nav,section {display: block}*,*::before,*::after {-w
 .bot__opener {width: 60px;height: 60px;border-radius: 50%;bottom: 20px;left: auto;top: auto;background: url(../img/cross.svg) #286efa no-repeat center;background-size: 35%;cursor: pointer;transition-duration: 600ms;-webkit-transition-duration: 600ms;-moz-transition-duration: 600ms;-ms-transition-duration: 600ms;-webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.06), 0 2px 32px 0 rgba(0,0,0,.16);
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.06), 0 2px 32px 0 rgba(0,0,0,.16);}
 .bot__opener:hover {opacity: 0.9}
-.modal-container {bottom: 100px; max-width: 376px;width: 100%;min-height: 500px;border-radius: 1em;background-color: antiquewhite;-webkit-box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
+.modal-container {bottom: 100px; max-width: 376px;width: 100%;min-height: 500px;border-radius: 1em;background-color: #fff;-webkit-box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
     box-shadow: 0 5px 40px rgba(0,0,0,.16)!important}
 .bot__header {background: linear-gradient(135deg,rgb(35, 146, 236) 0%,rgb(13, 92, 156) 100%);border-top-left-radius: 1em;border-top-right-radius: 1em;min-height: 75px;padding: 0 10px}
 .back__button {background: url(../img/arrow-point-to-right.svg) transparent no-repeat center;background-size: 29%;width: 51px;height: 51px;border-radius: 1em;cursor: pointer;transition-duration: 600ms;-webkit-transition-duration: 600ms;-moz-transition-duration: 600ms;-ms-transition-duration: 600ms;transform: rotate(180deg)}
@@ -28,7 +28,14 @@ article,aside,footer,header,nav,section {display: block}*,*::before,*::after {-w
 .user-name-status {opacity: 0.7;font-size: 0.75em}
 .text {padding: 17px 20px;border-radius: 0.3em;width: auto;display: inline;background-color: #f5f5f5;position: relative;font-size: 0.9em;color: #000}
 .massege_user .text {background-color: #286efa;color: #fff}
-.bot__chat-content {padding: 24px 24px 0;overflow-y: auto}
+.bot__chat-content {padding: 24px 24px 0;overflow-y: auto;bottom: 0;position: absolute;top: 75px;}
 .massege {padding-bottom: 33px}
-.massege_bot {}
+.massege.last {padding-bottom: 51px}
 .time-line {position: absolute;left: 0;top: auto;right: auto;bottom: -24px;color:#737376;font-size: 0.85em;}
+.btn_white {display: inline-block;border-radius: 6px;margin: 0 5px 10px;padding: 10px;border: 1px solid #286efa;background-color: #fff;color: #286efa;font-size: 0.875em;transition-duration: 400ms;-webkit-transition-duration: 400ms;-moz-transition-duration: 400ms;-ms-transition-duration: 400ms;cursor: pointer}
+.btn_white:hover {background-color: #286efa;color: #fff;}
+.btn {float: right;}
+.powered__area {clear: both;display: flex;justify-content: center;margin: 11px 0}
+.powered__area a {color: #777678;font-size: 0.875em;padding: 8px 16px;border-radius: 16px;text-decoration: none;transition-duration: 400ms;-webkit-transition-duration: 400ms;-moz-transition-duration: 400ms;-ms-transition-duration: 400ms}
+.powered__area a:hover {background-color: #f5f5f5}
+.intercom_icon {width: 16px;margin-right: 8px;}
