@@ -26,7 +26,9 @@ article,aside,footer,header,nav,section {display: block}*,*::before,*::after {-w
 .operator__img_bal::after {content: '';display: block;width: 10px;height: 10px;border: 2px solid #2392ec;background-color: #7ed321;border-radius: 50%;position: absolute;bottom: 4px;right: 8px;}
 .user-name, .user-name-status {color: #fff}
 .user-name-status {opacity: 0.7;font-size: 0.75em}
-.text {padding: 17px 20px;border-radius: 0.8em;width: auto;display: inline;background-color: #f5f5f5;position: relative}
-.bot__chat-content {padding: 24px 24px 0;}
-.message_bot {}
-.time-line {position: absolute;left: 0;top: auto;right: auto;bottom: -24px}
+.text {padding: 17px 20px;border-radius: 0.3em;width: auto;display: inline;background-color: #f5f5f5;position: relative;font-size: 0.9em;color: #000}
+.massege_user .text {background-color: #286efa;color: #fff}
+.bot__chat-content {padding: 24px 24px 0;overflow-y: auto}
+.massege {padding-bottom: 33px}
+.massege_bot {}
+.time-line {position: absolute;left: 0;top: auto;right: auto;bottom: -24px;color:#737376;font-size: 0.85em;}
