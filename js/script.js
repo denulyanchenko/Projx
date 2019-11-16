@@ -14,8 +14,8 @@ var called = false;
 button.onclick = function(){
     called = true;
     animate(called);
-    prompt("wow");
-    var notification = new Notification('Hello' + userName);
+    prompt("Set your billing account");
+    var notification = new Notification('Succes!');
     //setTimeout(notification.close.bind(notification), 4000);
 };
 
