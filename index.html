@@ -8,7 +8,26 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-custom>
       /* any custom styles go here. */
-      
+        body {font-family: 'Roboto', sans-serif;color: #000;box-sizing: border-box;font-style: normal}
+        main {padding-top: 51px}
+        .container {width: 100%;max-width: 680px;padding-left: 10px;padding-right: 10px}
+        .container-fluid {max-width: 680px;margin: 0 auto;width: 100%}
+        .m-side-0 {margin-left: -10px;margin-right: -10px}
+        h1 {font-size: 36px;line-height: 45px;font-weight: 700;text-align: center;position: absolute;top: 50%;left: 0;right: 0;z-index: 1;color: #fff}
+        h3 {font-size: 28px;line-height: 30px;font-weight: 700;text-align: center}
+        header {position: fixed;left: 0;right: 0;top: 0;min-height: 50px;
+            background: radial-gradient(circle, rgba(0,0,0,0.4) 57%, rgba(82,82,82,0.5354516806722689) 77%, rgba(255,255,255,1) 100%);z-index: 999999999999}
+        header ul {padding-left: 0;display: flex;justify-content: center}
+        header ul li {list-style: none;display: inline-flex;margin: 0 5px;color: #fff;cursor: pointer}
+        @media (min-width: 705px){
+            .container {max-width: 100%;width: auto}
+            .container-fluid {margin-left: auto;margin-right: auto}
+        }
+        
+        
+        .header {position: relative;overflow: hidden;}
+        .parallax-image-window {overflow: hidden}
+        .parallax-image-window amp-img {margin-bottom: -20%}
     </style>
     <script type="application/ld+json">
       {
@@ -21,9 +40,12 @@
         ]
       }
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     
     <script async custom-element="amp-facebook-page" src="https://cdn.ampproject.org/v0/amp-facebook-page-0.1.js"></script>
     <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
@@ -39,11 +61,20 @@
       <main>
           <div class="container">
              
-              <div class="container-fluid">
-                  <h1>Den Official Page</h1>
+              <div class="container-fluid m-side-0">
+                  <div class="header">
+                      <h1 amp-fx="parallax" data-parallax-factor="1.3">DEN OFFICIAL PAGE</h1>
+                      <div class="parallax-image-window">
+                          <amp-img amp-fx="parallax" data-parallax-factor="1.2" data-margin-start="10%" data-margin-end="70%" data-repeat width="673" height="550" layout="responsive" src="../projx/img/planet.png" alt="Planet"></amp-img>
+                      </div>
+                  </div>
               </div>
+              
+              <div class="container-fluid"></div>
+              <div class="container-fluid"></div>
 
               <div class="container-fluid">
+                <h3>SOCIAL PAGES</h3>
                  <div class="sec-text">My facebook account</div>
                  <amp-facebook-page width="300" height="200" layout="responsive" data-small-header="true" data-href="https://www.facebook.com/denulyanchenko">
                  </amp-facebook-page>
