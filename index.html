@@ -13,12 +13,18 @@
         .container {width: 100%;max-width: 680px;padding-left: 10px;padding-right: 10px}
         .container-fluid {max-width: 680px;margin: 0 auto;width: 100%}
         .m-side-0 {margin-left: -10px;margin-right: -10px}
-        h1 {font-size: 36px;line-height: 45px;font-weight: 700;text-align: center;position: absolute;top: 50%;left: 0;right: 0;z-index: 1;color: #fff}
+        h1 {font-size: 36px;line-height: 45px;font-weight: 700;text-align: center;position: absolute;top: 72%;left: 0;right: 0;z-index: 1;color: #fff}
         h3 {font-size: 28px;line-height: 30px;font-weight: 700;text-align: center}
         header {position: fixed;left: 0;right: 0;top: 0;min-height: 50px;
             background: radial-gradient(circle, rgba(0,0,0,0.4) 57%, rgba(82,82,82,0.5354516806722689) 77%, rgba(255,255,255,0.6) 100%);z-index: 999999999999}
         header ul {padding-left: 0;display: flex;justify-content: center}
         header ul li {list-style: none;display: inline-flex;margin: 0 5px;color: #fff;cursor: pointer}
+        @media (max-width: 400px){
+            h1 {top: 61%}
+        }
+        @media (max-width: 370px){
+            h1 {font-size: 29px}
+        }
         @media (min-width: 705px){
             .container {max-width: 100%;width: auto}
             .container-fluid {margin-left: auto;margin-right: auto}
