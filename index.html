@@ -10,25 +10,35 @@
       /* any custom styles go here. */
         body {font-family: 'Roboto', sans-serif;color: #000;box-sizing: border-box;font-style: normal}
         main {padding-top: 51px}
-        .container {width: 100%;max-width: 680px;padding-left: 10px;padding-right: 10px}
-        .container-fluid {max-width: 680px;margin: 0 auto;width: 100%}
-        .m-side-0 {margin-left: -10px;margin-right: -10px}
+        .container {max-width: 680px;min-width: 100%}
+        .container-fluid {max-width: 680px;margin: 0 auto;padding-left: 10px;padding-right: 10px;padding-bottom: 60px;padding-top: 60px}
+        .m-side-0 {padding-left: 0;padding-right: 0}
+        .p-vert-0 {padding-top: 0;padding-bottom: 0}
         h1 {font-size: 36px;line-height: 45px;font-weight: 700;text-align: center;position: absolute;top: 72%;left: 0;right: 0;z-index: 1;color: #fff}
         h3 {font-size: 28px;line-height: 30px;font-weight: 700;text-align: center}
+        p {font-size: 18px;line-height: 28px;max-width: 450px;margin: 0 auto}
         header {position: fixed;left: 0;right: 0;top: 0;min-height: 50px;
-            background: radial-gradient(circle, rgba(0,0,0,0.4) 57%, rgba(82,82,82,0.5354516806722689) 77%, rgba(255,255,255,0.6) 100%);z-index: 999999999999}
+            background: radial-gradient(circle, rgba(0,0,0,0.4) 57%, rgba(82,82,82,0.5354516806722689) 77%, rgba(255,255,255,0.6) 100%);z-index: 9}
         header ul {padding-left: 0;display: flex;justify-content: center}
         header ul li {list-style: none;display: inline-flex;margin: 0 5px;color: #fff;cursor: pointer}
+        .row {margin-left: -10px;margin-right: -10px}
+        .col-6 {float: left;width: calc(50% - 20px);padding-right: 10px;padding-left: 10px}
+        
+        
+        
+        
+        
+        @media (min-width: 705px){
+            .container {max-width: 100%;width: auto}
+            .container-fluid {margin-left: auto;margin-right: auto}
+        }
         @media (max-width: 400px){
             h1 {top: 61%}
         }
         @media (max-width: 370px){
             h1 {font-size: 29px}
         }
-        @media (min-width: 705px){
-            .container {max-width: 100%;width: auto}
-            .container-fluid {margin-left: auto;margin-right: auto}
-        }
+        
         
         
         .header {position: relative;overflow: hidden;}
@@ -51,6 +61,8 @@
     <script async custom-element="amp-facebook-page" src="https://cdn.ampproject.org/v0/amp-facebook-page-0.1.js"></script>
     <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
+
 
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -59,15 +71,16 @@
       <header>
           <ul>
               <li>MAIN</li>
-              <li>GALLERY</li>
-              <li>CONTACT</li>
               <li>ABOUT</li>
+              <li>SOCIAL</li>
+              <li>CONTACT</li>
+              
           </ul>
       </header>
       <main>
           <div class="container">
              
-              <div class="container-fluid m-side-0">
+              <div class="container-fluid m-side-0 p-vert-0">
                   <div class="header">
                       <h1 amp-fx="parallax" data-parallax-factor="1.3">DEN OFFICIAL PAGE</h1>
                       <div class="parallax-image-window">
@@ -76,23 +89,51 @@
                   </div>
               </div>
               
-              <div class="container-fluid"></div>
-              <div class="container-fluid"></div>
+              <div class="container-fluid">
+                  <h3>ABOUT ME</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti placeat minima rem optio itaque iste recusandae! Quidem iure mollitia, consequatur facilis. Earum, quisquam! Itaque veritatis, ratione nulla iste eos facere.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti placeat minima rem optio itaque iste recusandae! Quidem iure mollitia, consequatur facilis. Earum, quisquam! Itaque veritatis, ratione nulla iste eos facere.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti placeat minima rem optio itaque iste recusandae! Quidem iure mollitia, consequatur facilis. Earum, quisquam! Itaque veritatis, ratione nulla iste eos facere.
+                  </p>
+              </div>
+              
+              <div class="container-fluid">
+                  <amp-fx-flying-carpet height="650px">
+                      <amp-img src="img/main.jpg" width="450" height="650" alt="an image"></amp-img>
+                  </amp-fx-flying-carpet>
+              </div>
+              
 
               <div class="container-fluid">
-                <h3>SOCIAL PAGES</h3>
-                 <div class="sec-text">My facebook account</div>
-                 <amp-facebook-page width="300" height="200" layout="responsive" data-small-header="true" data-href="https://www.facebook.com/denulyanchenko">
-                 </amp-facebook-page>
-                 
+                  <h3>SOCIAL PAGES</h3>
+                  <div class="sec-text">My facebook account</div>
+                  <amp-facebook-page width="300" height="200" layout="responsive" data-small-header="true" data-href="https://www.facebook.com/denulyanchenko">
+                  </amp-facebook-page>
+                  
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aliquam excepturi sed nemo quisquam eligendi laudantium accusantium, maxime nam, itaque accusamus rerum alias quaerat. Ipsa explicabo voluptatem quisquam. Aperiam, enim!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aliquam excepturi sed nemo quisquam eligendi laudantium accusantium, maxime nam, itaque accusamus rerum alias quaerat. Ipsa explicabo voluptatem quisquam. Aperiam, enim!
+                  </p>
+
                   <div class="sec-text">My instagram account</div>
-                  <amp-instagram data-shortcode="By7zHwhHywe" data-captioned width="1" height="1" layout="responsive">
-                  </amp-instagram>
+                  <div class="row">
+                      <div class="col-6">
+                          <amp-instagram data-shortcode="By7zHwhHywe" data-captioned width="1" height="1" layout="responsive">
+                          </amp-instagram>
+                      </div>
+                      <div class="col-6">
+                          <amp-instagram data-shortcode="By7dhtfn-_D" data-captioned width="1" height="1" layout="responsive">
+                          </amp-instagram>
+                      </div>
+                  </div>
+
+
+              </div>
+              <div class="container-fluid">
                   
               </div>
               
               <div class="container-fluid">
-
+                   <h3>CONTACTS</h3>
               </div>
               
           </div>
