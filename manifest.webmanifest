@@ -1,7 +1,7 @@
 {
   "name": "Den Official Page",
   "short_name": "Den official",
-  "start_url": "/projx/",
+  "start_url": "/projx/index.html",
   "display": "standalone",
   "background_color": "#fff",
   "description": "My one-page website about me on AMP and PWA technology",
