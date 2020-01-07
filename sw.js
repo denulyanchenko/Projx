@@ -1,6 +1,7 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   '/Projx/',
+  '/Projx/pwa.html',
   '/Projx/img/main.jpg',
   '/Projx/js/src.js'
 ];
@@ -18,7 +19,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', event => {
     if (event.request.mode === 'navigate') {
-      event.respondWith(fetch('/pwa'));
+      event.respondWith(fetch('/Projx/pwa.html'));
 
       fetch(event.request.url);
     }
