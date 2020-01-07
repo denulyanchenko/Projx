@@ -2,7 +2,7 @@ var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   '/Projx/',
   '/Projx/img/main.jpg',
-  '/Projx/script/main.js'
+  '/Projx/js/src.js'
 ];
 
 self.addEventListener('install', function(event) {
